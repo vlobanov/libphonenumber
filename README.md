@@ -5,7 +5,7 @@ A thin wrapper for Google's https://github.com/googlei18n/libphonenumber/
 ## Usage
 Lein deps:
 ```
-[me.vlobanov/libphonenumber "0.1.0-SNAPSHOT"]
+[me.vlobanov/libphonenumber "0.1.1-SNAPSHOT"]
 ```
 
 ```
