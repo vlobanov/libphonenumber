@@ -3,5 +3,6 @@
             [libphonenumber.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+  (testing "some basics"
+    (is (= :invalid (first (parse-phone "8(985) 1309-309123" "RU"))))
+    (is (= :valid (first (parse-phone "8(985) 3093091" "RU"))))))
