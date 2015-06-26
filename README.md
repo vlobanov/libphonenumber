@@ -9,7 +9,7 @@ Lein deps:
 ```
 
 ```
-(require [me.vlobanov.libphonenumber.core :refer [parse-phone]])
+(require [libphonenumber.core :refer [parse-phone]])
 
 (parse-phone "8(985) 1309-309123" "RU") =>
   [:invalid {:type :unknown, :e164 "+79851309309123", :international "+7 9851309309123"}]
