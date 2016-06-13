@@ -37,6 +37,6 @@
             formatted-national  (.format number-util parsed format-national)]
         [is-valid {:type number-type
                    :e164 formatted-e164
-                   :international formatted-intern} 
-                   :national formatted-national])
+                   :international formatted-intern
+                   :national formatted-national}])
       (catch NumberParseException e [:error (str e)]))))
