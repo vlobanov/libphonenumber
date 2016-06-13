@@ -6,6 +6,7 @@
 
 (def format-e164 PhoneNumberUtil$PhoneNumberFormat/E164)
 (def format-international PhoneNumberUtil$PhoneNumberFormat/INTERNATIONAL)
+(def format-national PhoneNumberUtil$PhoneNumberFormat/NATIONAL)
 
 (def phone-types 
   {PhoneNumberUtil$PhoneNumberType/FIXED_LINE :fixed-line
@@ -31,9 +32,11 @@
             is-valid (if (.isValidNumber number-util parsed)
                          :valid
                          :invalid)
-            formatted-intern (.format number-util parsed format-international)
-            formatted-e164   (.format number-util parsed format-e164)]
+            formatted-intern    (.format number-util parsed format-international)
+            formatted-e164      (.format number-util parsed format-e164)
+            formatted-national  (.format number-util parsed format-national)]
         [is-valid {:type number-type
                    :e164 formatted-e164
-                   :international formatted-intern}])
+                   :international formatted-intern} 
+                   :national formatted-national])
       (catch NumberParseException e [:error (str e)]))))
