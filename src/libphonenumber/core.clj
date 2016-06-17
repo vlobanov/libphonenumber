@@ -8,7 +8,7 @@
 (def format-international PhoneNumberUtil$PhoneNumberFormat/INTERNATIONAL)
 (def format-national PhoneNumberUtil$PhoneNumberFormat/NATIONAL)
 
-(def phone-types 
+(def phone-types
   {PhoneNumberUtil$PhoneNumberType/FIXED_LINE :fixed-line
    PhoneNumberUtil$PhoneNumberType/MOBILE :mobile
    PhoneNumberUtil$PhoneNumberType/FIXED_LINE_OR_MOBILE :fixed-line-or-mobile
