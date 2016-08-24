@@ -5,7 +5,7 @@ A thin wrapper for Google's https://github.com/googlei18n/libphonenumber/
 ## Usage
 Lein deps:
 ```clojure
-[me.vlobanov/libphonenumber "0.2.0-SNAPSHOT"]
+[me.vlobanov/libphonenumber "0.2.0"]
 ```
 
 ```clojure
