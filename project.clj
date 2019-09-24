@@ -1,4 +1,4 @@
-(defproject me.vlobanov/libphonenumber "0.2.0"
+(defproject me.vlobanov/libphonenumber "8.10.18"
   :description "A thin wrapper for Google's libphonenumber"
   :url "https://github.com/vlobanov/libphonenumber"
   :license {:name "Eclipse Public License"
